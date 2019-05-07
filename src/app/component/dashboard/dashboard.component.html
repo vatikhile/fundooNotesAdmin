@@ -1,0 +1,47 @@
+<nav class="navbar navbar-dark bg-primary">
+  <h1>Admin</h1>
+  <a class="navbar-brand" href="login">Logout</a>
+</nav>
+<div class="row">
+  <div class="card col-md-6">
+    <div class="card-body">
+      <h5 class="card-title">Advance </h5>
+      <p id="userService" class="card-text">{{advancee}}</p>
+
+    </div>
+  </div>
+
+  <div class="card col-md-6">
+    <div class="card-body">
+      <h5 class="card-title">Basic</h5>
+      <p id="userService" class="card-text">{{basicc}}</p>
+
+    </div>
+  </div>
+</div>
+
+<div class="row mt-5 mx-auto">
+  <div class="col-lg-12">
+    <div class="card">
+      <table id="userTable" datatable class="row-border hover">
+        <thead>
+          <tr>
+            <th>Sr.no</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>service</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{index}}</td>
+            <td>{{index?.firstName}}</td>
+            <td>{{index?.email}}</td>
+            <td>{{index?.service}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
